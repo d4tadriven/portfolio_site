@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stijn Oude Groeniger · Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <p class="eyebrow">Hello, I’m</p>
+      <h1>Stijn Oude Groeniger</h1>
+      <p class="lede">
+        Front-end developer crafting clean interfaces and thoughtful user
+        experiences.
+      </p>
+      <div class="hero__actions">
+        <a class="btn" href="mailto:stijn@example.com">Contact Me</a>
+        <a class="link" href="https://github.com/StijnOudeGroeniger"
+          >GitHub Profile</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <section class="panel" id="about">
+        <h2>About</h2>
+        <p>
+          I enjoy building performant, accessible web products. My work blends
+          modern tooling with a focus on clean, maintainable code.
+        </p>
+      </section>
+
+      <section class="panel" id="projects">
+        <h2>Projects</h2>
+        <ul class="cards">
+          <li class="card">
+            <h3>Project One</h3>
+            <p>Short description that highlights the tech stack and impact.</p>
+            <a href="#">View project</a>
+          </li>
+          <li class="card">
+            <h3>Project Two</h3>
+            <p>Short description that highlights the tech stack and impact.</p>
+            <a href="#">View project</a>
+          </li>
+          <li class="card">
+            <h3>Project Three</h3>
+            <p>Short description that highlights the tech stack and impact.</p>
+            <a href="#">View project</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="panel" id="contact">
+        <h2>Contact</h2>
+        <p>
+          Want to collaborate or have a question? Reach out via email or find me
+          on GitHub.
+        </p>
+        <a class="btn" href="mailto:stijn@example.com">Say hello</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Stijn Oude Groeniger</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+
